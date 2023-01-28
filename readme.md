@@ -23,7 +23,7 @@ Usage: ./pgmReduce inputImage.pgm reduction_factor outputImage.pgm
 Usage: ./testscript.sh name_of_executable
 
 - valid name_of_executable options:
-    `echo`, `comp`, `bin`, `ascii`, `reduce`
+    `echo`, `comp`, `bin`, `ascii`, `reduce`, `tile`, `assemble`
 
 
 ## Points of interest in project
