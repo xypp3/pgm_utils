@@ -1,0 +1,54 @@
+# Module Plans
+
+## General Notes
+    Some tasks/methods/utilites are common between the tasks so they could extract into a general utility file.
+### Error handling utility file
+- There are a variety of errors to be checked for, however they can be slotted into different categories
+- A method for handling each type of error as provided by the specs
+
+### PGM utility file
+- Each task requires the opening and closing of .pgm files
+- Method for handling the inputing of .pgm files into data structures
+- Data structures for storing .pgm image data intermnally
+- contains the pgm2a and pgm2b utilities 
+- Method for handling the outputing .pgm files using data structures
+
+## Task 1 - echo
+- Method for input error handling
+- Method for output error handling
+
+## Task 2 - compare
+- Have a method for reading in a pgm file
+    - Method should store the file data in a temporary data structure
+- Method to validate if an input file is a valid pgm file
+- Method for comparing 2 files which are stored in data structures in the script
+    - subroutine for handingling comparison and errors
+
+## Task 3 - ASCII/binary
+- Method to validate input file as valid pgm file
+- Method that decides if input is in binary or ASCII
+- pgma2b method --> converts ASCII, TO binary
+- pgmb2a method --> converts binary, TO ASCII
+- Method for outputting data structure into a file
+
+## Task 4 - reduce
+- Method for validatating commandline inputs
+- Method for reading in the file and storing it in a temporary data structure
+- Method for calculating and downsizing img
+- Method for output data structure into a file
+
+## Task 5 - tile
+- Method for validating commandline inputs
+- Method for inputting file data into script data structure
+- Method for creating a array of tiles which the img is broken down into
+    - subroutine for cropping/adding onto image so that it fits the tile sizes
+- Method for outputting the tiles into separate .pgm files
+
+## Task 6 - assemble
+- Method for validating commandline inputs
+    - subroutine check if all expected .pgm files are present
+- Method for validating if collection of .pgm files are valid
+- Method for taking in a collection of .pgm image files and storing it in an internal data structure
+- Method putting together tiles in correct manner
+- Method for taking the finaly assembled tiles and outputting a img  file
+

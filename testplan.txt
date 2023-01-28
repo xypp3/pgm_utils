@@ -1,0 +1,20 @@
+# Test plan
+
+## General Ideas
+    There are a couple of general things that will apply to all tests in general. 
+    First is that regression testing will be utilized to ensure new code does not conflict with old parts.
+    This is done by running all the old tests at the same time as the new ones.
+    Not only designing robust and general code is necessary but also general and robust tests.
+    To design good tests a place to start is looking at the available errors that can be arrived at.
+    Then by figuring out and testing the edge cases of the all possible errors can a degree of confidence about the quality of the code be gained.
+    An additional testing startegy could be to try and design tests that will try and break the code.
+    For example submitting string escaping characters to try and cause the script to crash.
+    Stress testing the code in this manner is another way to improve the code quality.
+
+## Specific Ideas
+    For the pgmEcho and pgmComp modules, testing the boundary cases will be the primary tests applied.
+    For example testing a visually different but logically identical set of .pgm files for pgmComp. 
+    For the pgma2b and pgmb2a modules except for testing edge cases they can be tested by trying a conversion on an input in one direction and then reversing it
+    by using the other module. This inverse property can be used to test if at least the pgma2b and pgmb2a are consistent between each other in their conversions.
+    Their consistency however does not definitively prove that their conversions are correct. That's what the manual/edge case tests will provide. 
+    The inverse property could also be used to test the pgmTile and pgmAssemble modules.
